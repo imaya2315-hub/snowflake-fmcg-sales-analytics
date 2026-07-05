@@ -60,10 +60,10 @@ fmcg-sales-analytics/
    `USE WAREHOUSE` statements in `sql/01_setup_and_staging.sql` to match your environment.
 2. Load the dataset into a stage and table named `FMCG_RAW` (see `01_setup_and_staging.sql`
    for the `CREATE STAGE` step; use Snowflake's `COPY INTO` with the CSV to load data).
-3. Run the scripts in `sql/` in numeric order — each one builds on the raw `FMCG_RAW` table,
+3. Run the scripts in `sql/` in numeric order - each one builds on the raw `FMCG_RAW` table,
    entirely inside Snowflake.
 4. Open `powerbi/SQL.pbix` in Power BI Desktop. It's built to connect **directly to
-   Snowflake** (Get Data → Snowflake → enter your account/warehouse/database/schema) —
+   Snowflake** (Get Data → Snowflake → enter your account/warehouse/database/schema) -
    update the connection details to your own Snowflake instance, pointing at either
    `FMCG_RAW` directly or the curated views in `09_views.sql`.
 
