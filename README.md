@@ -47,11 +47,11 @@ fmcg-sales-analytics/
 
 ## Tech stack
 
-- **Snowflake** — the data warehouse for this entire project: staging (`CREATE STAGE`),
+- **Snowflake** - the data warehouse for this entire project: staging (`CREATE STAGE`),
   loading, and *all* SQL transformation/analysis (`sql/`) run here
-- **SQL (Snowflake dialect)** — exploration, data quality checks, KPI rollups,
+- **SQL (Snowflake dialect)** - exploration, data quality checks, KPI rollups,
   window-function analytics, and reusable views, all executed against Snowflake
-- **Power BI** — dashboarding (`powerbi/SQL.pbix`), connected **directly to Snowflake**
+- **Power BI** - dashboarding (`powerbi/SQL.pbix`), connected **directly to Snowflake**
   via Power BI's built-in Snowflake connector (Get Data → Snowflake), not a CSV import
 
 ## Getting started
